@@ -19,6 +19,7 @@
 		62F61A582909238200725A2B /* testView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A572909238200725A2B /* testView.swift */; };
 		62F61A5A290923E400725A2B /* homePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A59290923E400725A2B /* homePage.swift */; };
 		62F61A5C290924D900725A2B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A5B290924D900725A2B /* SwiftUIView.swift */; };
+		C185092D290A598B00E04013 /* SwiftUIView 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185092C290A598B00E04013 /* SwiftUIView 2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		62F61A572909238200725A2B /* testView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testView.swift; sourceTree = "<group>"; };
 		62F61A59290923E400725A2B /* homePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePage.swift; sourceTree = "<group>"; };
 		62F61A5B290924D900725A2B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		C185092C290A598B00E04013 /* SwiftUIView 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUIView 2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				62F61A282909118F00725A2B /* AskApp.swift */,
+				C185092C290A598B00E04013 /* SwiftUIView 2.swift */,
 				62F61A2A2909118F00725A2B /* ContentView.swift */,
 				62F61A2C2909119100725A2B /* Assets.xcassets */,
 				62F61A312909119100725A2B /* Persistence.swift */,
@@ -278,6 +281,7 @@
 				62F61A2B2909118F00725A2B /* ContentView.swift in Sources */,
 				62F61A5A290923E400725A2B /* homePage.swift in Sources */,
 				62F61A292909118F00725A2B /* AskApp.swift in Sources */,
+				C185092D290A598B00E04013 /* SwiftUIView 2.swift in Sources */,
 				62F61A352909119100725A2B /* Ask.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

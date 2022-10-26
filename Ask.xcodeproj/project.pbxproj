@@ -16,6 +16,7 @@
 		62F61A3F2909119100725A2B /* AskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A3E2909119100725A2B /* AskTests.swift */; };
 		62F61A492909119100725A2B /* AskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A482909119100725A2B /* AskUITests.swift */; };
 		62F61A4B2909119100725A2B /* AskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A4A2909119100725A2B /* AskUITestsLaunchTests.swift */; };
+		62F61A582909238200725A2B /* testView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A572909238200725A2B /* testView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		62F61A442909119100725A2B /* AskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F61A482909119100725A2B /* AskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskUITests.swift; sourceTree = "<group>"; };
 		62F61A4A2909119100725A2B /* AskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		62F61A572909238200725A2B /* testView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				62F61A312909119100725A2B /* Persistence.swift */,
 				62F61A332909119100725A2B /* Ask.xcdatamodeld */,
 				62F61A2E2909119100725A2B /* Preview Content */,
+				62F61A572909238200725A2B /* testView.swift */,
 			);
 			path = Ask;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62F61A322909119100725A2B /* Persistence.swift in Sources */,
+				62F61A582909238200725A2B /* testView.swift in Sources */,
 				62F61A2B2909118F00725A2B /* ContentView.swift in Sources */,
 				62F61A292909118F00725A2B /* AskApp.swift in Sources */,
 				62F61A352909119100725A2B /* Ask.xcdatamodeld in Sources */,

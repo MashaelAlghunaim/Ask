@@ -19,6 +19,8 @@
 		62F61A582909238200725A2B /* testView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A572909238200725A2B /* testView.swift */; };
 		62F61A5A290923E400725A2B /* homePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A59290923E400725A2B /* homePage.swift */; };
 		62F61A5C290924D900725A2B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A5B290924D900725A2B /* SwiftUIView.swift */; };
+		C1AE7E47290E653A00440AF6 /* SwiftUIView Shoug.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AE7E46290E653A00440AF6 /* SwiftUIView Shoug.swift */; };
+		C1AE7E7B290EE43200440AF6 /* SwiftUIView2Shoug.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AE7E7A290EE43200440AF6 /* SwiftUIView2Shoug.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		62F61A572909238200725A2B /* testView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testView.swift; sourceTree = "<group>"; };
 		62F61A59290923E400725A2B /* homePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePage.swift; sourceTree = "<group>"; };
 		62F61A5B290924D900725A2B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		C1AE7E46290E653A00440AF6 /* SwiftUIView Shoug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUIView Shoug.swift"; sourceTree = "<group>"; };
+		C1AE7E7A290EE43200440AF6 /* SwiftUIView2Shoug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView2Shoug.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				62F61A2E2909119100725A2B /* Preview Content */,
 				62F61A572909238200725A2B /* testView.swift */,
 				62F61A59290923E400725A2B /* homePage.swift */,
+				C1AE7E46290E653A00440AF6 /* SwiftUIView Shoug.swift */,
+				C1AE7E7A290EE43200440AF6 /* SwiftUIView2Shoug.swift */,
 			);
 			path = Ask;
 			sourceTree = "<group>";
@@ -273,11 +279,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				62F61A322909119100725A2B /* Persistence.swift in Sources */,
+				C1AE7E7B290EE43200440AF6 /* SwiftUIView2Shoug.swift in Sources */,
 				62F61A5C290924D900725A2B /* SwiftUIView.swift in Sources */,
 				62F61A582909238200725A2B /* testView.swift in Sources */,
 				62F61A2B2909118F00725A2B /* ContentView.swift in Sources */,
 				62F61A5A290923E400725A2B /* homePage.swift in Sources */,
 				62F61A292909118F00725A2B /* AskApp.swift in Sources */,
+				C1AE7E47290E653A00440AF6 /* SwiftUIView Shoug.swift in Sources */,
 				62F61A352909119100725A2B /* Ask.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

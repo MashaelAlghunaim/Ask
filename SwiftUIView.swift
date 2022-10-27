@@ -27,7 +27,7 @@ struct SwiftUIView: View {
     }
     }
 
-    
+    // new comment 1
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {

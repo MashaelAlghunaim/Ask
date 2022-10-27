@@ -19,6 +19,7 @@
 		62F61A582909238200725A2B /* testView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A572909238200725A2B /* testView.swift */; };
 		62F61A5A290923E400725A2B /* homePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A59290923E400725A2B /* homePage.swift */; };
 		62F61A5C290924D900725A2B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A5B290924D900725A2B /* SwiftUIView.swift */; };
+		D2EA4D6C290A63B300B61A7A /* Aljwhra1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EA4D6B290A63B300B61A7A /* Aljwhra1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		62F61A572909238200725A2B /* testView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testView.swift; sourceTree = "<group>"; };
 		62F61A59290923E400725A2B /* homePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePage.swift; sourceTree = "<group>"; };
 		62F61A5B290924D900725A2B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		D2EA4D6B290A63B300B61A7A /* Aljwhra1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aljwhra1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				62F61A5B290924D900725A2B /* SwiftUIView.swift */,
+				D2EA4D6B290A63B300B61A7A /* Aljwhra1.swift */,
 				62F61A272909118F00725A2B /* Ask */,
 				62F61A3D2909119100725A2B /* AskTests */,
 				62F61A472909119100725A2B /* AskUITests */,
@@ -275,6 +278,7 @@
 				62F61A322909119100725A2B /* Persistence.swift in Sources */,
 				62F61A5C290924D900725A2B /* SwiftUIView.swift in Sources */,
 				62F61A582909238200725A2B /* testView.swift in Sources */,
+				D2EA4D6C290A63B300B61A7A /* Aljwhra1.swift in Sources */,
 				62F61A2B2909118F00725A2B /* ContentView.swift in Sources */,
 				62F61A5A290923E400725A2B /* homePage.swift in Sources */,
 				62F61A292909118F00725A2B /* AskApp.swift in Sources */,

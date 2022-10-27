@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5967ADBB290A804A008F81E4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5967ADBA290A804A008F81E4 /* Post.swift */; };
 		59888B34290A750B00B4915C /* Faves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59888B33290A750B00B4915C /* Faves.swift */; };
 		62F61A292909118F00725A2B /* AskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A282909118F00725A2B /* AskApp.swift */; };
 		62F61A2B2909118F00725A2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A2A2909118F00725A2B /* ContentView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5967ADBA290A804A008F81E4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		59888B33290A750B00B4915C /* Faves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faves.swift; sourceTree = "<group>"; };
 		62F61A252909118F00725A2B /* Ask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F61A282909118F00725A2B /* AskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskApp.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				62F61A5B290924D900725A2B /* SwiftUIView.swift */,
 				59888B33290A750B00B4915C /* Faves.swift */,
+				5967ADBA290A804A008F81E4 /* Post.swift */,
 				62F61A272909118F00725A2B /* Ask */,
 				62F61A3D2909119100725A2B /* AskTests */,
 				62F61A472909119100725A2B /* AskUITests */,
@@ -281,6 +284,7 @@
 				59888B34290A750B00B4915C /* Faves.swift in Sources */,
 				62F61A2B2909118F00725A2B /* ContentView.swift in Sources */,
 				62F61A5A290923E400725A2B /* homePage.swift in Sources */,
+				5967ADBB290A804A008F81E4 /* Post.swift in Sources */,
 				62F61A292909118F00725A2B /* AskApp.swift in Sources */,
 				62F61A352909119100725A2B /* Ask.xcdatamodeld in Sources */,
 			);

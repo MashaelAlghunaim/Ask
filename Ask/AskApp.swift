@@ -13,7 +13,7 @@ struct AskApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Faves()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

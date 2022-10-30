@@ -53,7 +53,7 @@ struct Afnan_log_in: View {
                 }
                 Button( " نسيت كلمة المرور؟") {
                     
-                }
+                }.padding([.top, .bottom])
                 HStack {
                     
                     Button("تسجيل حساب جديد") {
@@ -61,12 +61,11 @@ struct Afnan_log_in: View {
                     }
                     Text("ليس لديك حساب؟")
                         .multilineTextAlignment(.trailing)
-                        .padding()
+                        .padding(5)
                 }
                 Button("تسجيل الدخول كزائر") {
                    
-                    
-                }
+                }.padding(.top)
             }
         }
             

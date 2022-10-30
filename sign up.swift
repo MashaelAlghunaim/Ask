@@ -15,6 +15,7 @@ struct sign_up: View {
     @State private var fullName = ""
     @State private var wrongFullName = 0
     @State private var showingLoginScreen = false
+    @State private var rewritePassword = ""
     
     var body: some View {
         NavigationView {
@@ -47,7 +48,7 @@ struct sign_up: View {
                     .background(Color.black.opacity(0.05))
                     .cornerRadius(10)
                     .border(.red, width: CGFloat(wrongPassword))
-                SecureField(" إعادة كتابة كلمة المرور" , text: $password)
+                SecureField(" إعادة كتابة كلمة المرور" , text: $rewritePassword)
                     .multilineTextAlignment(.trailing)
                     .padding()
                     .frame(width: 300, height: 50)
@@ -73,8 +74,8 @@ struct sign_up: View {
                         
                     }
                     Text("لديك حساب؟")
-                        .padding()
-                }
+                        
+                } .padding()
                 
             }
             

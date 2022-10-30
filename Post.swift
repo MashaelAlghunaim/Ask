@@ -13,5 +13,7 @@ struct  Post : Identifiable {
     let timestampText: String
     let text: String
     let numberOfLikes: Int
+    let title: String
+    let category: String
     
 }

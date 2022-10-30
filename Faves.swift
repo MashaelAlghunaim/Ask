@@ -54,10 +54,10 @@ struct Faves: View {
 struct NewQButton: View{
     var body: some View{
         Button(action: {}){
-            Image(systemName: "pencil")
-                .font(.largeTitle)
-                .foregroundColor(.white)
-                .padding()
+//            Image(systemName: "pencil")
+//                .font(.largeTitle)
+//                .foregroundColor(.white)
+//                .padding()
         }
         .background(Color.blue)
         .mask(Circle())
@@ -95,7 +95,7 @@ struct PostView: View {
             HStack(alignment: .top){
                 
                 Text(post.authorName)
-                    .bold()
+                 //   .bold()
                     .lineLimit(1)
                     .padding(.top, 5)
                 
@@ -137,9 +137,10 @@ struct PostView: View {
                             .padding(3)
                         Spacer()
                     }
+                    Divider()
                     PostActionViews(post: post)
                         .foregroundColor(.gray)
-                        .padding([.bottom, .top], 10)
+                       // .padding([.bottom, .top], 10)
                         .padding(.trailing, 30)
                 }
                 

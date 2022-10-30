@@ -13,7 +13,7 @@ struct AskApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Aljwhra1()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

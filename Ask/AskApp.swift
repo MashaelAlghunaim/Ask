@@ -14,6 +14,7 @@ struct AskApp: App {
     var body: some Scene {
         WindowGroup {
             Faves()
+            Afnan_log_in()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

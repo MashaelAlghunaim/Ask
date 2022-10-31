@@ -13,8 +13,10 @@ struct AskApp: App {
 
     var body: some Scene {
         WindowGroup {
-            Afnan_log_in()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+           // Afnan_log_in()
+               // .environment(\.managedObjectContext, //persistenceController.container.viewContext)
+            SwiftUIView().environment(\.managedObjectContext, persistenceController.container.viewContext)
+            
         }
     }
 }

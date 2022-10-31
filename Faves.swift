@@ -29,11 +29,11 @@ struct Faves: View {
                 Spacer()
                 HStack{
                     
-                    NewQButton()
-                        .padding(.bottom, 65)
-                        .padding(.trailing)
-                        .padding(.leading, 30)
-                    Spacer()
+//                    NewQButton()
+//                        .padding(.bottom, 65)
+//                        .padding(.trailing)
+//                        .padding(.leading, 30)
+//                    Spacer()
                      
                 }
             }
@@ -51,19 +51,19 @@ struct Faves: View {
     }
 }
 // new q button view
-struct NewQButton: View{
-    var body: some View{
-        Button(action: {}){
+//struct NewQButton: View{
+//    var body: some View{
+//        Button(action: {}){
 //            Image(systemName: "pencil")
 //                .font(.largeTitle)
 //                .foregroundColor(.white)
 //                .padding()
-        }
-        .background(Color.blue)
-        .mask(Circle())
-        .shadow(radius: 5)
-    }
-}
+//        }
+//        .background(Color.blue)
+//        .mask(Circle())
+//        .shadow(radius: 5)
+//    }
+//}
 
 // feed view
 struct FeedView: View {
@@ -149,6 +149,7 @@ struct PostView: View {
 }
 
 struct PostActionViews: View {
+    @State var faved = false
     let post: Post
     var body: some View {
         HStack {
@@ -160,7 +161,16 @@ struct PostActionViews: View {
             Spacer()
             
             Button(action: {}){
-                Image(systemName: "heart")
+                
+                    Image(systemName: faved ? "heart.fill" : "heart")
+                       // .resizable()
+                        .aspectRatio( contentMode: .fit)
+                        .foregroundColor(faved ? .red : .gray)
+                
+            }
+            
+            if faved {
+                Image(systemName: "heart.fill")
             }
             Spacer()
             
@@ -171,7 +181,7 @@ struct PostActionViews: View {
             }
             Spacer()
             Spacer()
-            Spacer()
+           // Spacer()
             
                 Text(post.category)
                     .foregroundColor(.blue)
@@ -185,6 +195,14 @@ struct PostActionViews: View {
         }
     }
 }
+
+struct heartButt: View{
+    var body: some View{
+        
+        Image(systemName: "heart")
+    }
+}
+
 
 struct Faves_Previews: PreviewProvider {
     static var previews: some View {

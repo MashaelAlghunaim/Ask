@@ -39,6 +39,7 @@ struct Afnan_log_in: View {
                     .cornerRadius(10)
                     .border(.red, width: CGFloat(wrongPassword))
                 
+                
                 Button("تسجيل الدخول ") {
                     
                 }
@@ -56,16 +57,16 @@ struct Afnan_log_in: View {
                 }.padding([.top, .bottom])
                 HStack {
                     
-                    Button("تسجيل حساب جديد") {
+                    Button("إنشاء حساب") {
                         
                     }
                     Text("ليس لديك حساب؟")
                         .multilineTextAlignment(.trailing)
-                        .padding(5)
+                        .padding(2)
                 }
-                Button("تسجيل الدخول كزائر") {
-                   
-                }.padding(.top)
+                Button(" الدخول كزائر") {
+                    
+                }
             }
         }
             

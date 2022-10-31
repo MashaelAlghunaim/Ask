@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0141A8A5290A71FC00CE7A06 /* Afnan log in.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0141A8A4290A71FC00CE7A06 /* Afnan log in.swift */; };
+		01608265290E6D8300E74076 /* sign up.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01608264290E6D8300E74076 /* sign up.swift */; };
 		62F61A292909118F00725A2B /* AskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A282909118F00725A2B /* AskApp.swift */; };
 		62F61A2B2909118F00725A2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A2A2909118F00725A2B /* ContentView.swift */; };
 		62F61A2D2909119100725A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F61A2C2909119100725A2B /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0141A8A4290A71FC00CE7A06 /* Afnan log in.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Afnan log in.swift"; sourceTree = "<group>"; };
+		01608264290E6D8300E74076 /* sign up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "sign up.swift"; sourceTree = "<group>"; };
 		62F61A252909118F00725A2B /* Ask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F61A282909118F00725A2B /* AskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskApp.swift; sourceTree = "<group>"; };
 		62F61A2A2909118F00725A2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,7 +88,9 @@
 		62F61A1C2909118F00725A2B = {
 			isa = PBXGroup;
 			children = (
+				01608264290E6D8300E74076 /* sign up.swift */,
 				62F61A5B290924D900725A2B /* SwiftUIView.swift */,
+				0141A8A4290A71FC00CE7A06 /* Afnan log in.swift */,
 				62F61A272909118F00725A2B /* Ask */,
 				62F61A3D2909119100725A2B /* AskTests */,
 				62F61A472909119100725A2B /* AskUITests */,
@@ -274,7 +280,9 @@
 			files = (
 				62F61A322909119100725A2B /* Persistence.swift in Sources */,
 				62F61A5C290924D900725A2B /* SwiftUIView.swift in Sources */,
+				0141A8A5290A71FC00CE7A06 /* Afnan log in.swift in Sources */,
 				62F61A582909238200725A2B /* testView.swift in Sources */,
+				01608265290E6D8300E74076 /* sign up.swift in Sources */,
 				62F61A2B2909118F00725A2B /* ContentView.swift in Sources */,
 				62F61A5A290923E400725A2B /* homePage.swift in Sources */,
 				62F61A292909118F00725A2B /* AskApp.swift in Sources */,

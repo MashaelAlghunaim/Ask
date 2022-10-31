@@ -13,7 +13,7 @@ struct AskApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Afnan_log_in()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

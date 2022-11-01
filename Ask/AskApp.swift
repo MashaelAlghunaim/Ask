@@ -13,7 +13,7 @@ struct AskApp: App {
 
     var body: some Scene {
         WindowGroup {
-            Aljwhra1()
+            ProfileView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

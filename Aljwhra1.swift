@@ -20,8 +20,8 @@ struct Aljwhra1: View {
                     HStack{
                         Spacer()
                         Text("منيرة")
-                            .foregroundColor(Color.blue)
-                        
+                            .foregroundColor(Color("darkBlue"))
+                            
                         
                         Image("Image")
                             .resizable()
@@ -58,7 +58,7 @@ struct Aljwhra1: View {
                     Spacer()
                     Text("منيرة")
                         .multilineTextAlignment(.leading)
-                        .foregroundColor(Color.blue)
+                        .foregroundColor(Color("darkBlue"))
                         .fontWeight(.bold)
                     Text("الرد على")
                         .font(.title3)
@@ -79,7 +79,7 @@ struct Aljwhra1: View {
                         .foregroundColor(Color.gray)
                     Spacer()
                     Text("د. مشاعل صالح")
-                        .foregroundColor(Color.blue)
+                        .foregroundColor(Color("darkBlue"))
                     
                     
                     Image(systemName: "person.circle")

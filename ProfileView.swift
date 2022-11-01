@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+//    @State var title:String="This is my titile"
+    
     var body: some View {
         
         VStack{
@@ -19,7 +22,8 @@ struct ProfileView: View {
                     .resizable()
                     .frame(width: 94,height: 94)
                     .foregroundColor(Color("lightGray"))
-                    //.background(Color("lightBlue"))
+                    .background(Color("lightBlue"))
+                    .cornerRadius(360)
                     .padding(.top, 120.0)
                     .padding(.leading,260.0)
             }
@@ -32,7 +36,9 @@ struct ProfileView: View {
                 
                 HStack{
                     Spacer()
-                    Text("منيره      " )
+                    Text("منيرة      " )
+                        .foregroundColor(Color("mediumBlue"))
+                        .bold()
                     Text("  الاسم")
                     
 
@@ -77,13 +83,46 @@ struct ProfileView: View {
                 
                 
                 
+                Button(action: {
+                    
+//                    self.title = "Button #2 was pressed"
+                }, label: {
+                    Text("تسجيل الخروج")
+                })
+                
+                .foregroundColor(Color.white)
+                .frame(width: 300, height: 50)
+                .background(Color.red)
+                .cornerRadius(10)
+                .padding(.top, 40.0)
+               
+                
+                
+                
             }
             
             .padding(.top, 70.0)
+           
+            
+            VStack(spacing: 15){
+                
+                
+                Text("تغيير كلمة المرور")
+                    .foregroundColor(.blue)
+                Text("حذف الحساب")
+                
+                    .foregroundColor(.red)
+                 
+                
+            }
+            .underline()
+            .fontWeight(.bold)
+            .padding()
+            .padding(.leading, 230.0)
+            
+            
+            
             Spacer()
-            
-            
-            
         }
         
         

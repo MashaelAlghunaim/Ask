@@ -64,7 +64,7 @@
 		62F61A482909119100725A2B /* AskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskUITests.swift; sourceTree = "<group>"; };
 		62F61A4A2909119100725A2B /* AskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		62F61A572909238200725A2B /* testView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testView.swift; sourceTree = "<group>"; };
-		62F61A59290923E400725A2B /* homePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePage.swift; sourceTree = "<group>"; };
+		62F61A59290923E400725A2B /* homePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = homePage.swift; path = Ask/homePage.swift; sourceTree = "<group>"; };
 		62F61A5B290924D900725A2B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +102,7 @@
 				625C6646291114C900F431EC /* favorites.swift */,
 				625C66402910560F00F431EC /* tabView.swift */,
 				62F61A5B290924D900725A2B /* SwiftUIView.swift */,
+				62F61A59290923E400725A2B /* homePage.swift */,
 				62F61A272909118F00725A2B /* Ask */,
 				62F61A3D2909119100725A2B /* AskTests */,
 				62F61A472909119100725A2B /* AskUITests */,
@@ -130,7 +131,6 @@
 				62F61A332909119100725A2B /* Ask.xcdatamodeld */,
 				62F61A2E2909119100725A2B /* Preview Content */,
 				62F61A572909238200725A2B /* testView.swift */,
-				62F61A59290923E400725A2B /* homePage.swift */,
 			);
 			path = Ask;
 			sourceTree = "<group>";

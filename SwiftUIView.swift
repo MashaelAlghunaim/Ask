@@ -48,8 +48,8 @@ struct SwiftUIView: View {
                                 
                             }
                             .padding(.all)
-                          .padding(.all)
-                          .padding(.bottom, 30)
+                            .padding(.all)
+                            .padding(.bottom, 30)
                         }
                         
                         Spacer()
@@ -63,38 +63,39 @@ struct SwiftUIView: View {
                             
                             Spacer()
                             Text("الخدمات").frame(maxWidth: .infinity, alignment: .trailing)
-                            
                         }
                         .padding()
-                        
                     }
                     
-                    //--
                     VStack(alignment: .trailing, spacing: -10){
-                        RoundedRectangle(cornerRadius: 25).fill(Color("darkBlue")).frame( height: 75).overlay(HStack(){
-                            Text("آخر المنشورات").foregroundColor(.white).fontWeight(.bold).frame(maxWidth: .infinity, alignment: .trailing).padding()
-                        })
-                        .padding(.all)
-                        RoundedRectangle(cornerRadius: 25).fill(Color("mediumBlue")).frame( height: 75).overlay(HStack{
-                            Text("اسأل سؤالك").foregroundColor(.white).fontWeight(.bold).frame(maxWidth: .infinity, alignment: .trailing).padding()
-                        })
-                        .padding(.all)
-                        RoundedRectangle(cornerRadius: 25).fill(Color("mediumBlue")).frame( height: 75).overlay(HStack{
-                            Text("جميع أسئلتي").foregroundColor(.white).fontWeight(.bold).frame(maxWidth: .infinity, alignment: .trailing)
-                                .padding()
-                        })
-                        .padding(.all)
-                        Spacer()
-                        
-                    }
+                       
+                            RoundedRectangle(cornerRadius: 25).fill(Color("darkBlue")).frame( height: 75).overlay(HStack(){
+                                Text("آخر المنشورات").foregroundColor(.white).fontWeight(.bold).frame(maxWidth: .infinity, alignment: .trailing).padding()
+                            })
+                            .padding(.all)
+                            RoundedRectangle(cornerRadius: 25).fill(Color("mediumBlue")).frame( height: 75).overlay(HStack{
+                                Text("اسأل سؤالك").foregroundColor(.white).fontWeight(.bold).frame(maxWidth: .infinity, alignment: .trailing).padding()
+                            })
+                            .padding(.all)
+                            RoundedRectangle(cornerRadius: 25).fill(Color("mediumBlue")).frame( height: 75).overlay(HStack{
+                                Text("جميع أسئلتي").foregroundColor(.white).fontWeight(.bold).frame(maxWidth: .infinity, alignment: .trailing)
+                                    .padding()
+                                
+                            })
+                            .padding(.all)
+                            
+                        }
+                    
                     
                 }
             }
-
-                }
-            }
+            
         }
-
+        
+    }
+    
+    
+}
     
     
     

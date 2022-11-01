@@ -8,31 +8,39 @@
 import SwiftUI
 
 struct tabView: View {
+    @State var selection: Int = 0
     var body: some View {
         
         TabView {
-                       SwiftUIView()
-                           .tabItem {
-                               Label("حسابي", systemImage:"person.circle")
-                           }
-                 
-                 SwiftUIView()
-                     .tabItem {
-                         Label("المفضلة", systemImage: "heart.circle")
-                     }
-
-                       SwiftUIView()
-                           .tabItem {
-                               Label("الرئيسية", systemImage: "house.circle")
-                           }
-                   }
-             
-               }
-           }
-
-
+            profilePage()
+                .tabItem {
+                    Label("حسابي", systemImage:"person.circle")
+                    
+                }
+                .toolbar(.visible, for: .tabBar)
+            
+                .toolbarBackground(Color("veryLightGray"),for: .tabBar)
+            favorites()
+                .tabItem {
+                    Label("المفضلة", systemImage: "heart.circle")
+                }
+                .toolbar(.visible, for: .tabBar)
+            
+                .toolbarBackground(Color("veryLightGray"),for: .tabBar)
+            SwiftUIView()
+                .tabItem {
+                    Label("الرئيسية", systemImage: "house.circle")
+                }
+                .toolbar(.visible, for: .tabBar)
+            
+                .toolbarBackground(Color("veryLightGray"),for: .tabBar)
+        }
+    }
+    
 struct tabView_Previews: PreviewProvider {
     static var previews: some View {
         tabView()
     }
 }
+}
+

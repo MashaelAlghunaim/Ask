@@ -15,7 +15,7 @@ struct AskApp: App {
         WindowGroup {
            // Afnan_log_in()
                // .environment(\.managedObjectContext, //persistenceController.container.viewContext)
-            SwiftUIView().environment(\.managedObjectContext, persistenceController.container.viewContext)
+            tabView().environment(\.managedObjectContext, persistenceController.container.viewContext)
             
         }
     }

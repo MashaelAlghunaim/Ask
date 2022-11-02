@@ -27,7 +27,8 @@ struct tabView: View {
                 .toolbar(.visible, for: .tabBar)
             
                 .toolbarBackground(Color("veryLightGray"),for: .tabBar)
-            SwiftUIView()
+        
+            homePage()
                 .tabItem {
                     Label("الرئيسية", systemImage: "house.circle")
                 }

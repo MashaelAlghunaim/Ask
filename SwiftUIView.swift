@@ -71,7 +71,10 @@ struct SwiftUIView: View {
                        
                             RoundedRectangle(cornerRadius: 25).fill(Color("darkBlue")).frame( height: 75).overlay(HStack(){
                                 Text("آخر المنشورات").foregroundColor(.white).fontWeight(.bold).frame(maxWidth: .infinity, alignment: .trailing).padding()
+                              
+                                
                             })
+                      
                             .padding(.all)
                             RoundedRectangle(cornerRadius: 25).fill(Color("mediumBlue")).frame( height: 75).overlay(HStack{
                                 Text("اسأل سؤالك").foregroundColor(.white).fontWeight(.bold).frame(maxWidth: .infinity, alignment: .trailing).padding()

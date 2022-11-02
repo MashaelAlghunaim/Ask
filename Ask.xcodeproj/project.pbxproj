@@ -12,7 +12,8 @@
 		625C66412910560F00F431EC /* tabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C66402910560F00F431EC /* tabView.swift */; };
 		625C6643291064F100F431EC /* infoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C6642291064F100F431EC /* infoView.swift */; };
 		625C6645291112F600F431EC /* profilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C6644291112F600F431EC /* profilePage.swift */; };
-		625C6647291114C900F431EC /* favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C6646291114C900F431EC /* favorites.swift */; };
+		625C664F2911B6C100F431EC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C664E2911B6C100F431EC /* Post.swift */; };
+		625C66512912430D00F431EC /* favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C66502912430D00F431EC /* favorites.swift */; };
 		62F61A292909118F00725A2B /* AskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A282909118F00725A2B /* AskApp.swift */; };
 		62F61A2B2909118F00725A2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A2A2909118F00725A2B /* ContentView.swift */; };
 		62F61A2D2909119100725A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F61A2C2909119100725A2B /* Assets.xcassets */; };
@@ -50,7 +51,8 @@
 		625C66402910560F00F431EC /* tabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabView.swift; sourceTree = "<group>"; };
 		625C6642291064F100F431EC /* infoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoView.swift; sourceTree = "<group>"; };
 		625C6644291112F600F431EC /* profilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilePage.swift; sourceTree = "<group>"; };
-		625C6646291114C900F431EC /* favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favorites.swift; sourceTree = "<group>"; };
+		625C664E2911B6C100F431EC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		625C66502912430D00F431EC /* favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favorites.swift; sourceTree = "<group>"; };
 		62F61A252909118F00725A2B /* Ask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F61A282909118F00725A2B /* AskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskApp.swift; sourceTree = "<group>"; };
 		62F61A2A2909118F00725A2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,10 +98,11 @@
 		62F61A1C2909118F00725A2B = {
 			isa = PBXGroup;
 			children = (
+				625C66502912430D00F431EC /* favorites.swift */,
+				625C664E2911B6C100F431EC /* Post.swift */,
 				01608264290E6D8300E74076 /* sign up.swift */,
 				0141A8A4290A71FC00CE7A06 /* Afnan log in.swift */,
 				625C6644291112F600F431EC /* profilePage.swift */,
-				625C6646291114C900F431EC /* favorites.swift */,
 				625C66402910560F00F431EC /* tabView.swift */,
 				62F61A5B290924D900725A2B /* SwiftUIView.swift */,
 				62F61A59290923E400725A2B /* homePage.swift */,
@@ -293,15 +296,16 @@
 				62F61A322909119100725A2B /* Persistence.swift in Sources */,
 				62F61A5C290924D900725A2B /* SwiftUIView.swift in Sources */,
 				625C66412910560F00F431EC /* tabView.swift in Sources */,
+				625C66512912430D00F431EC /* favorites.swift in Sources */,
 				625C6643291064F100F431EC /* infoView.swift in Sources */,
 				0141A8A5290A71FC00CE7A06 /* Afnan log in.swift in Sources */,
 				62F61A582909238200725A2B /* testView.swift in Sources */,
 				01608265290E6D8300E74076 /* sign up.swift in Sources */,
 				62F61A2B2909118F00725A2B /* ContentView.swift in Sources */,
+				625C664F2911B6C100F431EC /* Post.swift in Sources */,
 				62F61A5A290923E400725A2B /* homePage.swift in Sources */,
 				62F61A292909118F00725A2B /* AskApp.swift in Sources */,
 				625C6645291112F600F431EC /* profilePage.swift in Sources */,
-				625C6647291114C900F431EC /* favorites.swift in Sources */,
 				62F61A352909119100725A2B /* Ask.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

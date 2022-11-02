@@ -15,8 +15,8 @@ struct AskApp: App {
         WindowGroup {
            // Afnan_log_in()
                // .environment(\.managedObjectContext, //persistenceController.container.viewContext)
-            tabView().environment(\.managedObjectContext, persistenceController.container.viewContext)
-            
+          //  homePage().environment(\.managedObjectContext, persistenceController.container.viewContext)
+            homePage()
         }
     }
 }

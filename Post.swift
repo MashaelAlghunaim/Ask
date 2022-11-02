@@ -17,3 +17,6 @@ struct  Post : Identifiable {
     let category: String
     
 }
+
+
+

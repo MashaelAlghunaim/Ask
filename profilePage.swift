@@ -54,7 +54,7 @@ struct profilePage: View {
                 }
                 .padding()
                 .frame(maxWidth: .infinity,maxHeight: 70)
-                .border(Color("lightGray"), width: 1)
+                .border(Color("lightGray"), width: 0.5)
                 
                 HStack{
                     
@@ -75,7 +75,7 @@ struct profilePage: View {
                 }
                 .padding()
                 .frame(maxWidth: .infinity,maxHeight: 70)
-                .border(Color("lightGray"), width: 1)
+                .border(Color("lightGray"), width: 0.5)
                 
                 
                 

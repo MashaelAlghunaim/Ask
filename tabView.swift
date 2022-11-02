@@ -11,7 +11,7 @@ struct tabView: View {
     @State var selection: Int = 0
     var body: some View {
         
-        TabView {
+        TabView(content:  {
             profilePage()
                 .tabItem {
                     Label("حسابي", systemImage:"person.circle")
@@ -28,7 +28,7 @@ struct tabView: View {
             
                 .toolbarBackground(Color("veryLightGray"),for: .tabBar)
         
-            homePage()
+            SwiftUIView()
                 .tabItem {
                     Label("الرئيسية", systemImage: "house.circle")
                 }
@@ -36,7 +36,7 @@ struct tabView: View {
             
                 .toolbarBackground(Color("veryLightGray"),for: .tabBar)
         }
-    }
+    )}
     
 struct tabView_Previews: PreviewProvider {
     static var previews: some View {

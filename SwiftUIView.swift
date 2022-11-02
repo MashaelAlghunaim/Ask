@@ -77,7 +77,9 @@ struct SwiftUIView: View {
                       
                             .padding(.all)
                             RoundedRectangle(cornerRadius: 25).fill(Color("mediumBlue")).frame( height: 75).overlay(HStack{
+                                //NavigationLink(destination: SwiftUIView_Shoug(, sourceLink: ""))
                                 Text("اسأل سؤالك").foregroundColor(.white).fontWeight(.bold).frame(maxWidth: .infinity, alignment: .trailing).padding()
+                              
                             })
                             .padding(.all)
                             RoundedRectangle(cornerRadius: 25).fill(Color("mediumBlue")).frame( height: 75).overlay(HStack{

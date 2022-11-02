@@ -17,16 +17,14 @@ struct homePage: View {
     ]
     @State var searchText = ""
     @State var scrollViewContentSize: CGSize = .zero
-    @State var  text : Text = Text("آخر المنشورات").foregroundColor(Color("mediumGray"))
     var body: some View {
-        
         NavigationView{
             VStack{
               Spacer()
                 Spacer()
                 Spacer()
-//                    .padding()
-                    .navigationTitle(text).font(.headline)
+                  .padding()
+                Text("آخر المنشورات").foregroundColor(Color("mediumGray"))
 //                Spacer()
                 Text(searchText).searchable(text: $searchText, prompt: "البحث")
 //                Divider()

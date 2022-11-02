@@ -4,11 +4,12 @@
 //
 //  Created by Mashael Alghunaim on 01/04/1444 AH.
 
-
+//  Circle().frame(width: 60, height: //60).foregroundColor(Color("darkBlue")).position(x: 50, y: 450)
+ // Image(systemName: "plus").foregroundColor(.white).position(x: 50, y: 450
 import SwiftUI
 
 struct homePage: View {
-     let postss: [Post] = [
+    let postss: [Post] = [
         Post(authorName: "د. محمد", timestampText: "١٤٤٤/١٠/٢٢هـ", text: "من شأن الاكثار من شرب الماء ان يؤدي الى ارتفاع في ضغط الدم لدى الانسان الى جانب انخفاض نبضات...", numberOfLikes: 4, title: "هل الإكثار من شرب الماء له أضرار صحية؟", category: "الصحة العامة"),
         Post(authorName: "د. محمد", timestampText: "١٤٤٤/١٠/٢٢هـ", text: "من شأن الاكثار من شرب الماء ان يؤدي الى ارتفاع في ضغط الدم لدى الانسان الى جانب انخفاض نبضات...", numberOfLikes: 3, title: "هل الإكثار من شرب الماء له أضرار صحية؟", category: "الصحة العامة"),
         Post(authorName: "د. محمد", timestampText: "١٤٤٤/١٠/٢٢هـ", text: "من شأن الاكثار من شرب الماء ان يؤدي الى ارتفاع في ضغط الدم لدى الانسان الى جانب انخفاض نبضات...", numberOfLikes: 3, title: "هل الإكثار من شرب الماء له أضرار صحية؟", category: "الصحة العامة"),
@@ -16,13 +17,19 @@ struct homePage: View {
     ]
     @State var searchText = ""
     @State var scrollViewContentSize: CGSize = .zero
+    @State var  text : Text = Text("آخر المنشورات").foregroundColor(Color("mediumGray"))
     var body: some View {
+        
         NavigationView{
             VStack{
-                Text("آخر المنشورات").foregroundColor(Color("mediumGray"))
+              Spacer()
                 Spacer()
+                Spacer()
+//                    .padding()
+                    .navigationTitle(text).font(.headline)
+//                Spacer()
                 Text(searchText).searchable(text: $searchText, prompt: "البحث")
-                Divider()
+//                Divider()
                 ScrollView(.horizontal){
                     HStack( spacing: 0){
                         //ForEach(0..<8){_ in
@@ -72,23 +79,44 @@ struct homePage: View {
                     }
                     .padding()
                     // Spacer()
+                    Divider()
+                }
+                
+                
+                ZStack{
+                    FeedView(posts: postss).frame(height: 600)
+                  
+                    VStack{
+                        NavigationLink(destination: questionanswered()){
+                            
+                            
+                            ZStack{
+                                Button("+"){
+                                    
+                                }
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .frame(width: 100, height: 100)
+                                .frame(width: 150,height: 60)
+                                .background(Color("mediumBlue"))
+                                .clipShape(Circle()).frame(width: 200, height: 200).position(x: 50, y: 450)
+                            }
+                        }
+                    }
                     
                 }
-                FeedView(posts: postss).frame(minHeight: 510)
-                //tabView()
-                ZStack{
-                    
-                    Circle().frame(width: 50, height: 50).foregroundColor(Color("darkBlue")).position(x: 50, y: -40)
-             Image(systemName: "plus").foregroundColor(.white).position(x: 50, y: -40)
-             }
             }
         }
         
-        
-        
-        
     }
     
+}
+        
+        
+    
+  
+
     
     // feed view
     struct FeedView: View {
@@ -100,7 +128,7 @@ struct homePage: View {
                     PostView(post: post)
                 }
                 .listStyle(PlainListStyle())
-                //.navigationBarTitle("المفضلة", displayMode: .inline)
+               
             }
         }
     }
@@ -231,7 +259,7 @@ struct homePage: View {
         }
     }
     
-}
+
 
 
 
@@ -240,6 +268,7 @@ struct homePage: View {
 struct homePage_Previews: PreviewProvider {
     static var previews: some View {
         homePage()
+        
         
     }
 }

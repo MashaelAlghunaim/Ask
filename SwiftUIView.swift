@@ -7,13 +7,16 @@
 import SwiftUI
 
 struct SwiftUIView: View {
+    @State var action: Int? = 0
     @State var searchText = ""
     var body: some View {
         NavigationView {
             VStack{
                 HStack{
+                    NavigationLink(destination: questionanswered()){
                     Image(systemName: "bell.badge").foregroundColor(.red)
                     Spacer()
+                }
                     VStack{
                         Text("منيرة").fontWeight(.bold).font(.system(size: 25))
                         Text("صباح الخير")
@@ -67,40 +70,84 @@ struct SwiftUIView: View {
                         .padding()
                     }
                     
-                    VStack(alignment: .trailing, spacing: -10){
-                       
-                            RoundedRectangle(cornerRadius: 25).fill(Color("darkBlue")).frame( height: 75).overlay(HStack(){
-                                Text("آخر المنشورات").foregroundColor(.white).fontWeight(.bold).frame(maxWidth: .infinity, alignment: .trailing).padding()
-                              
+                    VStack(alignment: .trailing){
+                        NavigationLink(destination: homePage()){
+                            
+                            
+                            Button("آخر المنشورات"){
                                 
-                            })
-                      
-                            .padding(.all)
-                            RoundedRectangle(cornerRadius: 25).fill(Color("mediumBlue")).frame( height: 75).overlay(HStack{
-                                //NavigationLink(destination: SwiftUIView_Shoug(, sourceLink: ""))
-                                Text("اسأل سؤالك").foregroundColor(.white).fontWeight(.bold).frame(maxWidth: .infinity, alignment: .trailing).padding()
-                              
-                            })
-                            .padding(.all)
-                            RoundedRectangle(cornerRadius: 25).fill(Color("mediumBlue")).frame( height: 75).overlay(HStack{
-                                Text("جميع أسئلتي").foregroundColor(.white).fontWeight(.bold).frame(maxWidth: .infinity, alignment: .trailing)
-                                    .padding()
+                            }
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity, alignment: .trailing).padding()
+                            .frame(width: 300, height: 40)
+                            .frame(width: 350, height: 60)
+                            .background(Color("mediumBlue"))
+                            .mask(RoundedRectangle(cornerRadius: 25, style: .continuous)).frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing)
+                        }
+                        NavigationLink(destination: questionanswered()){
+                            Button("اسال سؤالك"){
                                 
-                            })
-                            .padding(.all)
+                            }
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity, alignment: .trailing).padding()
+                            .frame(width: 300, height: 40)
+                            .frame(width: 350, height: 60)
+                            .background(Color("lightBlue"))
+                            .mask(RoundedRectangle(cornerRadius: 25, style: .continuous)).frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing)
                             
                         }
+                        NavigationLink(destination: SwiftUIView2Shoug()){
+                        Button("جميع أسئلتي"){
+                            
+                        }
+                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity, alignment: .trailing).padding()
+                        .foregroundColor(.white)
+                        .frame(width: 300, height: 40)
+                        .frame(width: 350, height: 60)
+                        .background(Color("lightBlue"))
+                        .mask(RoundedRectangle(cornerRadius: 25, style: .continuous)).frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing)
+                    }
+                    }
+                    }
                     
                     
                 }
+                //                    VStack(alignment: .trailing, spacing: -10){
+                //
+                //                            RoundedRectangle(cornerRadius: 25).fill(Color("darkBlue")).frame( height: 75).overlay(HStack(){
+                //                                Text("آخر المنشورات").foregroundColor(.white).fontWeight(.bold).frame(maxWidth: .infinity, alignment: .trailing).padding()
+                //
+                //
+                //                            })
+                //
+                //                            .padding(.all)
+                //                            RoundedRectangle(cornerRadius: 25).fill(Color("mediumBlue")).frame( height: 75).overlay(HStack{
+                //                                Text("اسأل سؤالك").foregroundColor(.white).fontWeight(.bold).frame(maxWidth: .infinity, alignment: .trailing).padding()
+                //
+                //                            })
+                //                            .padding(.all)
+                //                            RoundedRectangle(cornerRadius: 25).fill(Color("mediumBlue")).frame( height: 75).overlay(HStack{
+                //                                Text("جميع أسئلتي").foregroundColor(.white).fontWeight(.bold).frame(maxWidth: .infinity, alignment: .trailing)
+                //                                    .padding()
+                //
+                //                            })
+                //                            .padding(.all)
+                //
+                //                        }
+                
+                
             }
-            
         }
         
     }
     
     
-}
+    
+    
+
     
     
     

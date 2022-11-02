@@ -39,6 +39,7 @@ struct Afnan_log_in: View {
                     .cornerRadius(10)
                     .border(.red, width: CGFloat(wrongPassword))
                 
+                NavigationLink(destination: homePage()){
                 
                 Button("تسجيل الدخول ") {
                     
@@ -48,10 +49,10 @@ struct Afnan_log_in: View {
                 .frame(width: 300, height: 50)
                 .background(Color("lightBlue"))
                 .cornerRadius(10)
-                
-                NavigationLink(destination: Text("you are logged in @\(email)"), isActive: $showingLoginScreen) {
-                    EmptyView()
                 }
+//                NavigationLink(destination: Text("you are logged in @\(email)"), isActive: $showingLoginScreen) {
+//                    EmptyView()
+//                }
                 Button( " نسيت كلمة المرور؟") {
                     
                 }.padding([.top, .bottom])

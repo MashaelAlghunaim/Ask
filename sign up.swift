@@ -56,7 +56,9 @@ struct sign_up: View {
                     .cornerRadius(10)
                     .border(.red, width: CGFloat(wrongPassword))
                 
-                
+                NavigationLink(destination: homePage()){
+                    
+             
                 Button("إنشاء حساب  ") {
                     
                 }
@@ -64,8 +66,9 @@ struct sign_up: View {
                 .frame(width: 300, height: 50)
                 .background(Color("lightBlue"))
                 .cornerRadius(10)
-                NavigationLink(destination: Text("you are logged in @\(email)"), isActive: $showingLoginScreen) {
-                    EmptyView()
+                //                NavigationLink(destination: Text("you are logged in @\(email)"), isActive: $showingLoginScreen) {
+                //                    EmptyView()
+                //                }
                 }
                 HStack{
                     

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0141A8A5290A71FC00CE7A06 /* Afnan log in.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0141A8A4290A71FC00CE7A06 /* Afnan log in.swift */; };
 		01608265290E6D8300E74076 /* sign up.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01608264290E6D8300E74076 /* sign up.swift */; };
-		622AF26E29126DF5004388F8 /* testbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF26D29126DF5004388F8 /* testbutton.swift */; };
 		625C66412910560F00F431EC /* tabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C66402910560F00F431EC /* tabView.swift */; };
 		625C6643291064F100F431EC /* infoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C6642291064F100F431EC /* infoView.swift */; };
 		625C6645291112F600F431EC /* profilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C6644291112F600F431EC /* profilePage.swift */; };
@@ -56,7 +55,6 @@
 /* Begin PBXFileReference section */
 		0141A8A4290A71FC00CE7A06 /* Afnan log in.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Afnan log in.swift"; sourceTree = "<group>"; };
 		01608264290E6D8300E74076 /* sign up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "sign up.swift"; sourceTree = "<group>"; };
-		622AF26D29126DF5004388F8 /* testbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = testbutton.swift; path = ../testbutton.swift; sourceTree = "<group>"; };
 		625C66402910560F00F431EC /* tabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabView.swift; sourceTree = "<group>"; };
 		625C6642291064F100F431EC /* infoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoView.swift; sourceTree = "<group>"; };
 		625C6644291112F600F431EC /* profilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilePage.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				62A8848D2914607E003DBE09 /* SwiftUIView_Shoug1.swift */,
 				62A8848929139C9A003DBE09 /* userQuestions.swift */,
 				625C665A291261B300F431EC /* welcomePage.swift */,
-				622AF26D29126DF5004388F8 /* testbutton.swift */,
 				625C665229124C8700F431EC /* questionanswered.swift */,
 				625C66502912430D00F431EC /* favorites.swift */,
 				625C664E2911B6C100F431EC /* Post.swift */,
@@ -324,7 +321,6 @@
 				62F61A5C290924D900725A2B /* SwiftUIView.swift in Sources */,
 				625C66412910560F00F431EC /* tabView.swift in Sources */,
 				625C66512912430D00F431EC /* favorites.swift in Sources */,
-				622AF26E29126DF5004388F8 /* testbutton.swift in Sources */,
 				62A8848E2914607E003DBE09 /* SwiftUIView_Shoug1.swift in Sources */,
 				625C6643291064F100F431EC /* infoView.swift in Sources */,
 				62A8848A29139C9A003DBE09 /* userQuestions.swift in Sources */,

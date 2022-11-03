@@ -87,7 +87,7 @@ struct SwiftUIView: View {
                         .background(didTap ? Color("darkBlue") : Color("mediumBlue"))
                         .mask(RoundedRectangle(cornerRadius: 25, style: .continuous)).frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing)
                     }
-                    NavigationLink(destination: SwiftUIView2Shoug()){
+                    NavigationLink(destination: SwiftUIView2Shoug1()){
                         Text("اسأل سؤالك")
                         //                            Button("اسأل سؤالك"){
                         

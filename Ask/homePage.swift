@@ -9,6 +9,11 @@
 import SwiftUI
 
 struct homePage: View {
+    init(){
+
+        
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(Color("lightGray"))]
+        }
     let postss: [Post] = [
         Post(authorName: "د. محمد", timestampText: "١٤٤٤/١٠/٢٢هـ", text: "من شأن الاكثار من شرب الماء ان يؤدي الى ارتفاع في ضغط الدم لدى الانسان الى جانب انخفاض نبضات...", numberOfLikes: 4, title: "هل الإكثار من شرب الماء له أضرار صحية؟", category: "الصحة العامة"),
         Post(authorName: "د. محمد", timestampText: "١٤٤٤/١٠/٢٢هـ", text: "من شأن الاكثار من شرب الماء ان يؤدي الى ارتفاع في ضغط الدم لدى الانسان الى جانب انخفاض نبضات...", numberOfLikes: 3, title: "هل الإكثار من شرب الماء له أضرار صحية؟", category: "الصحة العامة"),
@@ -20,14 +25,14 @@ struct homePage: View {
     var body: some View {
         NavigationView{
             VStack{
-              Spacer()
                 Spacer()
                 Spacer()
-                  .padding()
-                Text("آخر المنشورات").foregroundColor(Color("mediumGray"))
-//                Spacer()
+                Spacer()
+                    .padding()
+                //Text("آخر المنشورات").foregroundColor(Color("mediumGray"))
+                //                Spacer()
                 Text(searchText).searchable(text: $searchText, prompt: "البحث")
-//                Divider()
+                //                Divider()
                 ScrollView(.horizontal){
                     HStack( spacing: 0){
                         //ForEach(0..<8){_ in
@@ -83,28 +88,29 @@ struct homePage: View {
                 
                 ZStack{
                     FeedView(posts: postss).frame(height: 600)
-                  
+                    
                     VStack{
-                        NavigationLink(destination: questionanswered()){
-                            
-                            
-                            ZStack{
-                                Button("+"){
-                                    
-                                }
-                                .fontWeight(.bold)
-                                .foregroundColor(.white)
-                                .font(.headline)
-                                .frame(width: 100, height: 100)
-                                .frame(width: 150,height: 60)
-                                .background(Color("mediumBlue"))
-                                .clipShape(Circle()).frame(width: 200, height: 200).position(x: 50, y: 450)
+                        
+                        
+                        
+                        ZStack{
+                            NavigationLink(destination: SwiftUIView2Shoug()){
+                                Image(systemName: "plus")
                             }
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .font(.headline)
+                            .frame(width: 100, height: 100)
+                            .frame(width: 150,height: 60)
+                            .background(Color("mediumBlue"))
+                            .clipShape(Circle()).frame(width: 200, height: 200).position(x: 50, y: 450)
                         }
-                    }
                     
                 }
+            
+                }
             }
+            .navigationBarTitle("آخر المنشورات", displayMode: .inline)
         }
         
     }

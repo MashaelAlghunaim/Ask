@@ -9,8 +9,10 @@ import SwiftUI
 struct SwiftUIView: View {
     @State var action: Int? = 0
     @State var searchText = ""
+    @State private var didTap: Bool = false
     var body: some View {
         NavigationView {
+        
             VStack{
                 HStack{
                     NavigationLink(destination: questionanswered()){
@@ -82,11 +84,11 @@ struct SwiftUIView: View {
                             .frame(maxWidth: .infinity, alignment: .trailing).padding()
                             .frame(width: 300, height: 40)
                             .frame(width: 350, height: 60)
-                            .background(Color("mediumBlue"))
+                            .background(didTap ? Color("darkBlue") : Color("mediumBlue"))
                             .mask(RoundedRectangle(cornerRadius: 25, style: .continuous)).frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing)
                         }
                         NavigationLink(destination: questionanswered()){
-                            Button("اسال سؤالك"){
+                            Button("اسأل سؤالك"){
                                 
                             }
                             .fontWeight(.bold)
@@ -94,7 +96,7 @@ struct SwiftUIView: View {
                             .frame(maxWidth: .infinity, alignment: .trailing).padding()
                             .frame(width: 300, height: 40)
                             .frame(width: 350, height: 60)
-                            .background(Color("lightBlue"))
+                            .background(Color("mediumBlue"))
                             .mask(RoundedRectangle(cornerRadius: 25, style: .continuous)).frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing)
                             
                         }
@@ -107,7 +109,7 @@ struct SwiftUIView: View {
                         .foregroundColor(.white)
                         .frame(width: 300, height: 40)
                         .frame(width: 350, height: 60)
-                        .background(Color("lightBlue"))
+                        .background(Color("mediumBlue"))
                         .mask(RoundedRectangle(cornerRadius: 25, style: .continuous)).frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing)
                     }
                     }

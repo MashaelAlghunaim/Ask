@@ -17,7 +17,7 @@ struct questionanswered: View {
                 
 
                 NavigationLink(destination:
-                                profilePage() ){
+                                userQuestions() ){
                     Image(systemName: "bell")
                 }
                     .padding(.leading, -155.0)
@@ -91,6 +91,7 @@ struct questionanswered: View {
                         Spacer()
                         Text("د. مشاعل صالح")
                             .foregroundColor(Color("darkBlue"))
+                            
                         
                         
                         Image(systemName: "person.circle")
@@ -101,12 +102,13 @@ struct questionanswered: View {
                         
                         
                     }
+                    .padding(.top,60)
                     
                     
                 }
                 .padding()
                 Spacer()
-                
+                    
                 
             }
             

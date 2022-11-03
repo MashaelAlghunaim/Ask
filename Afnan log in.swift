@@ -57,16 +57,21 @@ struct Afnan_log_in: View {
                     
                 }.padding([.top, .bottom])
                 HStack {
-                    
-                    Button("إنشاء حساب") {
-                        
+                    NavigationLink(destination:
+                                    sign_up() ){
+                        Button("إنشاء حساب") {
+                            
+                        }
                     }
                     Text("ليس لديك حساب؟")
                         .multilineTextAlignment(.trailing)
                         .padding(2)
                 }
-                Button(" الدخول كزائر") {
-                    
+                NavigationLink(destination:
+                                    homePage() ){
+                    Button(" الدخول كزائر") {
+                        
+                    }
                 }
             }
         }

@@ -71,10 +71,11 @@ struct sign_up: View {
                 //                }
                 }
                 HStack{
-                    
-                    
-                    Button("تسجيل الدخول ") {
-                        
+                    NavigationLink(destination:
+                                    Afnan_log_in() ){
+                        Button("تسجيل الدخول ") {
+                            
+                        }
                     }
                     Text("لديك حساب؟")
                         

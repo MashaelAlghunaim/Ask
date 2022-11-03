@@ -40,7 +40,7 @@ var values = [
     ),
     SectionContent(
         image:Image("Girl"),
-        text:"النساد والولادة"
+        text:"النساء والولادة"
     ),
     SectionContent(
         image:Image(systemName: "allergens.fill"),

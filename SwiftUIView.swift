@@ -98,7 +98,7 @@ struct SwiftUIView: View {
                             .mask(RoundedRectangle(cornerRadius: 25, style: .continuous)).frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing)
                             
                         }
-                        NavigationLink(destination: SwiftUIView2Shoug()){
+                        NavigationLink(destination: userQuestions()){
                         Button("جميع أسئلتي"){
                             
                         }

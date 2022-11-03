@@ -14,12 +14,20 @@ struct homePage: View {
         
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(Color("lightGray"))]
         }
+//    let postss: [Post] = [
+//        Post(authorName: "د. محمد", timestampText: "١٤٤٤/١٠/٢٢هـ", text: "من شأن الاكثار من شرب الماء ان يؤدي الى ارتفاع في ضغط الدم لدى الانسان الى جانب انخفاض نبضات...", numberOfLikes: 4, title: "هل الإكثار من شرب الماء له أضرار صحية؟", category: "الصحة العامة"),
+//        Post(authorName: "د. محمد", timestampText: "١٤٤٤/١٠/٢٢هـ", text: "من شأن الاكثار من شرب الماء ان يؤدي الى ارتفاع في ضغط الدم لدى الانسان الى جانب انخفاض نبضات...", numberOfLikes: 3, title: "هل الإكثار من شرب الماء له أضرار صحية؟", category: "الصحة العامة"),
+//        Post(authorName: "د. محمد", timestampText: "١٤٤٤/١٠/٢٢هـ", text: "من شأن الاكثار من شرب الماء ان يؤدي الى ارتفاع في ضغط الدم لدى الانسان الى جانب انخفاض نبضات...", numberOfLikes: 3, title: "هل الإكثار من شرب الماء له أضرار صحية؟", category: "الصحة العامة"),
+//        Post(authorName: "د. محمد", timestampText: "١٤٤٤/١٠/٢٢هـ", text: "من شأن الاكثار من شرب الماء ان يؤدي الى ارتفاع في ضغط الدم لدى الانسان الى جانب انخفاض نبضات...", numberOfLikes: 3, title: "هل الإكثار من شرب الماء له أضرار صحية؟", category: "الصحة العامة")
+//    ]
     let postss: [Post] = [
-        Post(authorName: "د. محمد", timestampText: "١٤٤٤/١٠/٢٢هـ", text: "من شأن الاكثار من شرب الماء ان يؤدي الى ارتفاع في ضغط الدم لدى الانسان الى جانب انخفاض نبضات...", numberOfLikes: 4, title: "هل الإكثار من شرب الماء له أضرار صحية؟", category: "الصحة العامة"),
-        Post(authorName: "د. محمد", timestampText: "١٤٤٤/١٠/٢٢هـ", text: "من شأن الاكثار من شرب الماء ان يؤدي الى ارتفاع في ضغط الدم لدى الانسان الى جانب انخفاض نبضات...", numberOfLikes: 3, title: "هل الإكثار من شرب الماء له أضرار صحية؟", category: "الصحة العامة"),
-        Post(authorName: "د. محمد", timestampText: "١٤٤٤/١٠/٢٢هـ", text: "من شأن الاكثار من شرب الماء ان يؤدي الى ارتفاع في ضغط الدم لدى الانسان الى جانب انخفاض نبضات...", numberOfLikes: 3, title: "هل الإكثار من شرب الماء له أضرار صحية؟", category: "الصحة العامة"),
-        Post(authorName: "د. محمد", timestampText: "١٤٤٤/١٠/٢٢هـ", text: "من شأن الاكثار من شرب الماء ان يؤدي الى ارتفاع في ضغط الدم لدى الانسان الى جانب انخفاض نبضات...", numberOfLikes: 3, title: "هل الإكثار من شرب الماء له أضرار صحية؟", category: "الصحة العامة")
+        Post(authorName: "د. محمد فتحي", timestampText: "١٤٤٤/١٠/٢٢هـ", text: "من شأن الاكثار من شرب الماء ان يؤدي الى ارتفاع في ضغط الدم لدى الانسان الى جانب انخفاض نبضات...", numberOfLikes: 4, title: "هل الإكثار من شرب الماء له أضرار صحية؟", category: "الصحة العامة"),
+        Post(authorName: "د. ابراهيم فالح", timestampText: "١٤٤٤/١٠/٢٢هـ",text: "نقص فيتامين (د) قد يؤدي إلى الهشاشة و الإصابة بالعديد من الأامراض الأخرى، مؤكدًا أن فيتامين(د)...", numberOfLikes: 7, title: "هل نقص فيتامين د سبب في هشاشة العظام؟", category: "الصحة العامة"),
+        Post(authorName: " د. الاء العبدالله ", timestampText:  "١٤٤٤/١٠/٢٢هـ", text:" القهوة تضر بصحة القلب و تزيد من ضغط الدم و مستوى الكوليسترول في الدم فضلًا عن أنها تزيد من خطر الإصابة...", numberOfLikes: 94, title: "هل كثرة القهوة تضر بصحة القلب؟", category: "الصحة العامة"),
+        Post(authorName: "د. الجوهرة الناصر ", timestampText: "١٤٤٤/١٠/٢٢هـ", text:"الأكل غير المناسب لمرضى السكري؟ الأطعمة التي تحتوي على الدقيق الأبيض...", numberOfLikes: 88, title: "ما هي الأطعمة الممنوعة على مرضى السكري؟", category: "الصحة العامة")
+        
     ]
+        
     @State var searchText = ""
     @State var scrollViewContentSize: CGSize = .zero
     var body: some View {

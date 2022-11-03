@@ -16,7 +16,7 @@ struct AskApp: App {
            // Afnan_log_in()
                // .environment(\.managedObjectContext, //persistenceController.container.viewContext)
           //  homePage().environment(\.managedObjectContext, persistenceController.container.viewContext)
-            Afnan_log_in()
+            tabView()
         }
     }
 }

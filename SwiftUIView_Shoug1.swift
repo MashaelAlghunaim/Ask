@@ -1,26 +1,27 @@
 //
-//  SwiftUIView Shoug.swift
+//  SwiftUIView_Shoug1.swift
 //  Ask
 //
-//  Created by Shouq Turki Bin Tuwaym on 05/04/1444 AH.
+//  Created by Mashael Alghunaim on 09/04/1444 AH.
 //
+
 
 import SwiftUI
 
-struct SwiftUIView_Shoug: View {
-
-
+struct SwiftUIView_Shoug1: View {
+    
+    
     @State var givenText: String = ""
     @State var sentMessages: String = ""
     @State var showingPopup = false
     let sourceLink: String
-
+    
     var body: some View {
         VStack {
             Text("").frame(height: 5)
-
+            
             Divider()
-
+            
             Form{
                 Section{
                     Text(sentMessages)
@@ -29,15 +30,15 @@ struct SwiftUIView_Shoug: View {
                         .multilineTextAlignment(.trailing)
                 }
             }.scrollContentBackground(.hidden)
-
+            
             Spacer()
-
-
+            
+            
             HStack{
-
+                
                 HStack (alignment: .center) {
                     Button(action:{
-
+                        
                         sentMessages +=  givenText + "\r\n"
                         showingPopup = true
                         givenText = ""
@@ -61,7 +62,7 @@ struct SwiftUIView_Shoug: View {
                     )
                     .lineLimit(6)
                     .multilineTextAlignment(.trailing)
-
+                    
                 }
                 .padding()
                 .background(
@@ -90,19 +91,19 @@ struct SwiftUIView_Shoug: View {
                     )
                 )
                 .offset(x: 0, y: -20)
-
+                
             } .padding()
-
+            
         }
         .navigationTitle(self.sourceLink)
-        .navigationBarBackButtonHidden(true)
+        .navigationBarBackButtonHidden(false)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(trailing: Image("Image")
             .resizable().aspectRatio(contentMode: .fit).frame(maxWidth: 50)
             .foregroundColor(.gray)
         )
         .popover(isPresented: $showingPopup) { // 3
-
+            
             Button(action: {
                 showingPopup = false
             }){
@@ -122,15 +123,14 @@ struct SwiftUIView_Shoug: View {
                         .foregroundColor(.black)
                 }
             }
-
+            
         }
     }
-
+    
 }
 
-struct SwiftUIView_Shoug_Previews: PreviewProvider {
+struct SwiftUIView_Shoug1_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIView_Shoug(sourceLink:"None")
+        SwiftUIView_Shoug1(sourceLink:"None")
     }
 }
-

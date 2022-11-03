@@ -20,6 +20,8 @@
 		625C665729124EA800F431EC /* SwiftUIView Shoug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C665629124EA800F431EC /* SwiftUIView Shoug.swift */; };
 		625C665B291261B300F431EC /* welcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C665A291261B300F431EC /* welcomePage.swift */; };
 		62A8848A29139C9A003DBE09 /* userQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8848929139C9A003DBE09 /* userQuestions.swift */; };
+		62A8848E2914607E003DBE09 /* SwiftUIView_Shoug1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8848D2914607E003DBE09 /* SwiftUIView_Shoug1.swift */; };
+		62A88490291460AD003DBE09 /* SectionContent1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8848F291460AD003DBE09 /* SectionContent1.swift */; };
 		62F61A292909118F00725A2B /* AskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A282909118F00725A2B /* AskApp.swift */; };
 		62F61A2B2909118F00725A2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A2A2909118F00725A2B /* ContentView.swift */; };
 		62F61A2D2909119100725A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F61A2C2909119100725A2B /* Assets.xcassets */; };
@@ -65,6 +67,8 @@
 		625C665629124EA800F431EC /* SwiftUIView Shoug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUIView Shoug.swift"; sourceTree = "<group>"; };
 		625C665A291261B300F431EC /* welcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomePage.swift; sourceTree = "<group>"; };
 		62A8848929139C9A003DBE09 /* userQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userQuestions.swift; sourceTree = "<group>"; };
+		62A8848D2914607E003DBE09 /* SwiftUIView_Shoug1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView_Shoug1.swift; sourceTree = "<group>"; };
+		62A8848F291460AD003DBE09 /* SectionContent1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionContent1.swift; sourceTree = "<group>"; };
 		62F61A252909118F00725A2B /* Ask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F61A282909118F00725A2B /* AskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskApp.swift; sourceTree = "<group>"; };
 		62F61A2A2909118F00725A2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 		62F61A1C2909118F00725A2B = {
 			isa = PBXGroup;
 			children = (
+				62A8848F291460AD003DBE09 /* SectionContent1.swift */,
+				62A8848D2914607E003DBE09 /* SwiftUIView_Shoug1.swift */,
 				62A8848929139C9A003DBE09 /* userQuestions.swift */,
 				625C665A291261B300F431EC /* welcomePage.swift */,
 				622AF26D29126DF5004388F8 /* testbutton.swift */,
@@ -311,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A88490291460AD003DBE09 /* SectionContent1.swift in Sources */,
 				625C665529124E7E00F431EC /* SwiftUIView2Shoug.swift in Sources */,
 				625C665B291261B300F431EC /* welcomePage.swift in Sources */,
 				62F61A322909119100725A2B /* Persistence.swift in Sources */,
@@ -318,6 +325,7 @@
 				625C66412910560F00F431EC /* tabView.swift in Sources */,
 				625C66512912430D00F431EC /* favorites.swift in Sources */,
 				622AF26E29126DF5004388F8 /* testbutton.swift in Sources */,
+				62A8848E2914607E003DBE09 /* SwiftUIView_Shoug1.swift in Sources */,
 				625C6643291064F100F431EC /* infoView.swift in Sources */,
 				62A8848A29139C9A003DBE09 /* userQuestions.swift in Sources */,
 				0141A8A5290A71FC00CE7A06 /* Afnan log in.swift in Sources */,

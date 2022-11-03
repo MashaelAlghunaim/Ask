@@ -1,63 +1,64 @@
-
-//  ContentView.swift
-//  My Screen
 //
-//  Created by Shouq Turki Bin Tuwaym on 29/03/1444 AH.
+//  SectionContent1.swift
+//  Ask
+//
+//  Created by Mashael Alghunaim on 09/04/1444 AH.
+//
 
 
 import SwiftUI
 
 
-struct SectionContent{
+struct SectionContent1{
     let image:Image
     let text:String
 }
 
-var values = [
-    SectionContent(
+var values1 = [
+    SectionContent1(
         image:Image(systemName: "figure.walk"),
         text:"العظام والمفاصل"
     ),
-    SectionContent(
+    SectionContent1(
         image:Image(systemName: "list.clipboard.fill"),
         text:"الصحة العامة"
     ),
-    SectionContent(
+    SectionContent1(
         image:Image(systemName: "bubbles.and.sparkles.fill"),
         text:"الطب الشعبي "
     ),
-    SectionContent(
+    SectionContent1(
         image:Image(systemName: "heart.text.square.fill"),
         text:"أمراض الباطنية "
     ),
-    SectionContent(
+    SectionContent1(
         image:Image(systemName: "figure.strengthtraining.functional"),
         text:"العلاج الطبيعي"
     ),
-    SectionContent(
+    SectionContent1(
         image:Image(systemName: "lungs.fill"),
         text:"أمراض الجهاز التنفسي"
     ),
-    SectionContent(
+    SectionContent1(
         image:Image("Girl"),
         text:"النساء والولادة"
     ),
-    SectionContent(
+    SectionContent1(
         image:Image(systemName: "allergens.fill"),
         text:"الجلدية"
     )
 ]
 
-struct BoxView: View {
-
-    let sectionContent: SectionContent
-
+struct BoxView1: View {
+    
+    let sectionContent1: SectionContent1
+    
     var body: some View {
-        NavigationLink(destination: SwiftUIView_Shoug(sourceLink:self.sectionContent.text)){
+        NavigationLink(destination: SwiftUIView_Shoug1(sourceLink:self.sectionContent1.text)){
             VStack{
-                self.sectionContent.image.foregroundColor(.white)
+                self.sectionContent1.image.foregroundColor(.white)
                     .padding(5)
-                Text(self.sectionContent.text).foregroundColor(.white)
+                Text(self.sectionContent1.text).foregroundColor(.white)
             }
             .padding()
             .frame(
@@ -70,33 +71,30 @@ struct BoxView: View {
             .cornerRadius(10)
             .padding(0)
         }
-        .navigationBarBackButtonHidden(true)
+        .navigationBarBackButtonHidden(false)
     }
 }
 
 
-struct SwiftUIView2Shoug: View {
-
-
+struct SwiftUIView2Shoug1: View {
     var body: some View {
-
             VStack (spacing: 40) {
                 Text("مرحبًا بك في اسأل\r\nماهو نوع سؤالك")
                     .multilineTextAlignment(.center).lineSpacing(22)
-
+                
                 VStack(spacing: 7){
                     ForEach(
                         0 ..< Int(
                             ceil(
-                                Double(values.count)/2.0
+                                Double(values1.count)/2.0
                             )
                         ),
                         id: \.self
                     ) { i in
                         HStack(spacing: 7) {
-                            BoxView(sectionContent: values[i*2])
-                            if(i*2+1 < values.count){
-                                BoxView(sectionContent: values[i*2+1])
+                            BoxView1(sectionContent1: values1[i*2])
+                            if(i*2+1 < values1.count){
+                                BoxView1(sectionContent1: values1[i*2+1])
                             }
                         }
                     }
@@ -107,10 +105,10 @@ struct SwiftUIView2Shoug: View {
 //                    .navigationBarBackButtonHidden(false)
 //                    .onDisappear()
 //                    .navigationBarBackButtonHidden(true)
-
-
-
-
+                
+                   
+                    
+                
             }
     }
 }
@@ -118,10 +116,9 @@ struct SwiftUIView2Shoug: View {
 
 
 
-struct SwiftUIView2Shoug_Previews: PreviewProvider {
+struct SwiftUIView2Shoug1_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIView2Shoug()
-
+        SwiftUIView2Shoug1()
+        
     }
 }
-

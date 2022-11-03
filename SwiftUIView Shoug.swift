@@ -16,87 +16,86 @@ struct SwiftUIView_Shoug: View {
     let sourceLink: String
     
     var body: some View {
-        NavigationView{
-            VStack {
-                Text("").frame(height: 5)
-                
-                Divider()
-                
-                Form{
-                    Section{
-                        Text(sentMessages)
-                            .padding()
-                            .frame(maxWidth: .infinity, alignment: .trailing)
-                            .multilineTextAlignment(.trailing)
-                    }
-                }.scrollContentBackground(.hidden)
-                
-                Spacer()
-                
-                
-                HStack{
-                    
-                    HStack (alignment: .center) {
-                        Button(action:{
-                            
-                            sentMessages +=  givenText + "\r\n"
-                            showingPopup = true
-                            givenText = ""
-                        }){
-                            Image(systemName:"arrow.up.circle.fill")
-                                .resizable()
-                                .frame(width: 30, height: 30, alignment: .center)
-                                .foregroundColor(.gray)
-                        }
-                        TextField(
-                            "",
-                            text: $givenText,
-                            axis: .vertical
-                        )
-                        .background(alignment: .trailing, content: {
-                            Text(
-                                givenText == "" ? "اكتب سؤالك" : ""
-                            )
-                                .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.757, green: 0.757, blue: 0.765)/*@END_MENU_TOKEN@*/)
-                            }
-                        )
-                        .lineLimit(6)
+        VStack {
+            Text("").frame(height: 5)
+            
+            Divider()
+            
+            Form{
+                Section{
+                    Text(sentMessages)
+                        .padding()
+                        .frame(maxWidth: .infinity, alignment: .trailing)
                         .multilineTextAlignment(.trailing)
+                }
+            }.scrollContentBackground(.hidden)
+            
+            Spacer()
+            
+            
+            HStack{
+                
+                HStack (alignment: .center) {
+                    Button(action:{
                         
+                        sentMessages +=  givenText + "\r\n"
+                        showingPopup = true
+                        givenText = ""
+                    }){
+                        Image(systemName:"arrow.up.circle.fill")
+                            .resizable()
+                            .frame(width: 30, height: 30, alignment: .center)
+                            .foregroundColor(.gray)
                     }
-                    .padding()
-                    .background(
-                        RoundedRectangle(
-                            cornerRadius: 10
-                        )
-                        .stroke(
-                            Color.init(
-                                red:230/255,
-                                green:230/255,
-                                blue: 230/255
-                            ),
-                            lineWidth:1
-                        )
+                    TextField(
+                        "",
+                        text: $givenText,
+                        axis: .vertical
                     )
-                    .background(
-                        RoundedRectangle(
-                            cornerRadius: 10
+                    .background(alignment: .trailing, content: {
+                        Text(
+                            givenText == "" ? "اكتب سؤالك" : ""
                         )
-                        .fill(
-                            Color.init(
-                                red:250/255,
-                                green:250/255,
-                                blue: 250/255
-                            )
-                        )
+                        .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.757, green: 0.757, blue: 0.765)/*@END_MENU_TOKEN@*/)
+                    }
                     )
-                    .offset(x: 0, y: -20)
+                    .lineLimit(6)
+                    .multilineTextAlignment(.trailing)
                     
-                } .padding()
-            }
+                }
+                .padding()
+                .background(
+                    RoundedRectangle(
+                        cornerRadius: 10
+                    )
+                    .stroke(
+                        Color.init(
+                            red:230/255,
+                            green:230/255,
+                            blue: 230/255
+                        ),
+                        lineWidth:1
+                    )
+                )
+                .background(
+                    RoundedRectangle(
+                        cornerRadius: 10
+                    )
+                    .fill(
+                        Color.init(
+                            red:250/255,
+                            green:250/255,
+                            blue: 250/255
+                        )
+                    )
+                )
+                .offset(x: 0, y: -20)
+                
+            } .padding()
+            
         }
         .navigationTitle(self.sourceLink)
-        .navigationBarBackButtonHidden(false)
+        .navigationBarBackButtonHidden(true)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(trailing: Image("Image")
             .resizable().aspectRatio(contentMode: .fit).frame(maxWidth: 50)
@@ -105,7 +104,7 @@ struct SwiftUIView_Shoug: View {
         .popover(isPresented: $showingPopup) { // 3
             
             Button(action: {
-            showingPopup = false
+                showingPopup = false
             }){
                 VStack { // 4
                     Image(systemName:"checkmark.seal.fill")
@@ -123,11 +122,11 @@ struct SwiftUIView_Shoug: View {
                         .foregroundColor(.black)
                 }
             }
+            
         }
     }
+    
 }
-
-
 
 struct SwiftUIView_Shoug_Previews: PreviewProvider {
     static var previews: some View {

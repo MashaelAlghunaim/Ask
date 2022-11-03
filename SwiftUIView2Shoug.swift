@@ -70,6 +70,7 @@ struct BoxView: View {
             .cornerRadius(10)
             .padding(0)
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
@@ -78,7 +79,7 @@ struct SwiftUIView2Shoug: View {
     
     
     var body: some View {
-        NavigationView{
+
             VStack (spacing: 40) {
                 Text("مرحبًا بك في اسأل\r\nماهو نوع سؤالك")
                     .multilineTextAlignment(.center).lineSpacing(22)
@@ -100,10 +101,17 @@ struct SwiftUIView2Shoug: View {
                         }
                     }
                 }.padding(14)
+//                    .statusBarHidden(true)
+//                    .onAppear()
+//                    .navigationBarBackButtonHidden(true)
+//                    .navigationBarBackButtonHidden(false)
+//                    .onDisappear()
+//                    .navigationBarBackButtonHidden(true)
                 
-               
+                   
+                    
+                
             }
-        }
     }
 }
 

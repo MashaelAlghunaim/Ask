@@ -23,7 +23,7 @@ struct homePage: View {
     @State var searchText = ""
     @State var scrollViewContentSize: CGSize = .zero
     var body: some View {
-        NavigationView{
+        NavigationView {
             VStack{
                 Spacer()
                 Spacer()
@@ -31,8 +31,9 @@ struct homePage: View {
                     .padding()
                 //Text("آخر المنشورات").foregroundColor(Color("mediumGray"))
                 //                Spacer()
-                Text(searchText).searchable(text: $searchText, prompt: "البحث")
+                
                 //                Divider()
+                Text(searchText).searchable(text: $searchText, prompt: "البحث")
                 ScrollView(.horizontal){
                     HStack( spacing: 0){
                         //ForEach(0..<8){_ in
@@ -105,12 +106,13 @@ struct homePage: View {
                             .background(Color("mediumBlue"))
                             .clipShape(Circle()).frame(width: 200, height: 200).position(x: 50, y: 450)
                         }
+                        
+                    }
                     
                 }
-            
-                }
             }
-            .navigationBarTitle("آخر المنشورات", displayMode: .inline)
+            .navigationBarTitle("آخر المنشورات", displayMode: .inline).frame(height: 20)
+            
         }
         
     }

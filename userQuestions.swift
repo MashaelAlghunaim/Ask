@@ -39,7 +39,7 @@ struct userQuestions: View {
     @State private var answ = false
     @State private var tabSelection = 1
     var body: some View {
-        NavigationView{
+        
             VStack{
                 Spacer()
                 Text(searchText).searchable(text: $searchText, prompt: "البحث")
@@ -64,7 +64,7 @@ struct userQuestions: View {
                 
             }
             .navigationBarTitle("جميع أسئلتي", displayMode: .inline)
-        }
+        
         
         
         

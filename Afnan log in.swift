@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct Afnan_log_in: View {
-    @State private var email = ""
-    @State private var password = ""
+    @State private var email = "mashael@gmail.com"
+    @State private var password = "0000"
     @State private var wrongEmail = 0
     @State private var wrongPassword = 0
     @State private var showingLoginScreen = false
@@ -39,7 +39,7 @@ struct Afnan_log_in: View {
                     .cornerRadius(10)
                     .border(.red, width: CGFloat(wrongPassword))
                 
-                NavigationLink(destination: homePage()){
+                NavigationLink(destination: tabView()){
                 
                 Button("تسجيل الدخول ") {
                     
@@ -68,7 +68,7 @@ struct Afnan_log_in: View {
                         .padding(2)
                 }
                 NavigationLink(destination:
-                                    homePage() ){
+                                    SwiftUIView() ){
                     Button(" الدخول كزائر") {
                         
                     }

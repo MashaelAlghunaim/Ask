@@ -21,6 +21,7 @@
 		62A8848A29139C9A003DBE09 /* userQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8848929139C9A003DBE09 /* userQuestions.swift */; };
 		62A8848E2914607E003DBE09 /* SwiftUIView_Shoug1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8848D2914607E003DBE09 /* SwiftUIView_Shoug1.swift */; };
 		62A88490291460AD003DBE09 /* SectionContent1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8848F291460AD003DBE09 /* SectionContent1.swift */; };
+		62A8849229158AF8003DBE09 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8849129158AF8003DBE09 /* SplashScreenView.swift */; };
 		62F61A292909118F00725A2B /* AskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A282909118F00725A2B /* AskApp.swift */; };
 		62F61A2B2909118F00725A2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F61A2A2909118F00725A2B /* ContentView.swift */; };
 		62F61A2D2909119100725A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F61A2C2909119100725A2B /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		62A8848929139C9A003DBE09 /* userQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userQuestions.swift; sourceTree = "<group>"; };
 		62A8848D2914607E003DBE09 /* SwiftUIView_Shoug1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView_Shoug1.swift; sourceTree = "<group>"; };
 		62A8848F291460AD003DBE09 /* SectionContent1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionContent1.swift; sourceTree = "<group>"; };
+		62A8849129158AF8003DBE09 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		62F61A252909118F00725A2B /* Ask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F61A282909118F00725A2B /* AskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskApp.swift; sourceTree = "<group>"; };
 		62F61A2A2909118F00725A2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		62F61A1C2909118F00725A2B = {
 			isa = PBXGroup;
 			children = (
+				62A8849129158AF8003DBE09 /* SplashScreenView.swift */,
 				62A8848F291460AD003DBE09 /* SectionContent1.swift */,
 				62A8848D2914607E003DBE09 /* SwiftUIView_Shoug1.swift */,
 				62A8848929139C9A003DBE09 /* userQuestions.swift */,
@@ -329,6 +332,7 @@
 				62F61A582909238200725A2B /* testView.swift in Sources */,
 				01608265290E6D8300E74076 /* sign up.swift in Sources */,
 				625C665329124C8700F431EC /* questionanswered.swift in Sources */,
+				62A8849229158AF8003DBE09 /* SplashScreenView.swift in Sources */,
 				62F61A2B2909118F00725A2B /* ContentView.swift in Sources */,
 				625C664F2911B6C100F431EC /* Post.swift in Sources */,
 				62F61A5A290923E400725A2B /* homePage.swift in Sources */,

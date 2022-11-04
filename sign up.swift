@@ -8,23 +8,27 @@
 import SwiftUI
 
 struct sign_up: View {
-    @State private var email = ""
-    @State private var password = ""
+    @State private var email = "mashael@gmail.com"
+    @State private var password = "12345"
     @State private var wrongEmail = 0
     @State private var wrongPassword = 0
-    @State private var fullName = ""
+    @State private var fullName = "Mashaell.g"
     @State private var wrongFullName = 0
     @State private var showingLoginScreen = false
-    @State private var rewritePassword = ""
+    @State private var rewritePassword = "12345"
+    @State private var isPresentedFullScreenCover = false
+   
     
     var body: some View {
         NavigationView {
-            
-            
             VStack {
+                
+                
                 Text("إنشاء حساب ")
                     .font(.largeTitle)
                     .padding()
+                
+                
                 TextField("الاسم الكامل " , text: $fullName)
                     .multilineTextAlignment(.trailing)
                     .padding()
@@ -55,12 +59,14 @@ struct sign_up: View {
                     .background(Color.black.opacity(0.05))
                     .cornerRadius(10)
                     .border(.red, width: CGFloat(wrongPassword))
-                
-                NavigationLink(destination: homePage()){
+            
+            
+                NavigationLink(destination: tabView()){
                     
              
                 Button("إنشاء حساب  ") {
-                    
+//                    isPresentedFullScreenCover = true
+                }
                 }
                 .foregroundColor(.white)
                 .frame(width: 300, height: 50)
@@ -69,7 +75,12 @@ struct sign_up: View {
                 //                NavigationLink(destination: Text("you are logged in @\(email)"), isActive: $showingLoginScreen) {
                 //                    EmptyView()
                 //                }
-                }
+//                .fullScreenCover(isPresented: $isPresentedFullScreenCover){
+//                    SwiftUIView()
+//        }
+               
+               
+       
                 HStack{
                     NavigationLink(destination:
                                     Afnan_log_in() ){
@@ -77,10 +88,16 @@ struct sign_up: View {
                             
                         }
                     }
+                    
                     Text("لديك حساب؟")
                         
                 } .padding()
-                
+                NavigationLink(destination:
+                                    SwiftUIView() ){
+                    Button(" الدخول كزائر") {
+                        
+                    }
+                }
             }
             
         }

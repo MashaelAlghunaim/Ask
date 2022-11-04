@@ -10,7 +10,7 @@ import SwiftUI
 
 struct homePage: View {
     init(){
-
+    @State  var liked = true
         
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(Color("lightGray"))]
         }
@@ -203,7 +203,7 @@ struct homePage: View {
     
     struct PostActionViews: View {
         @State private var faved = false
-        @State private var liked = false
+        @State private var liked = true
         let post: Post
         var body: some View {
             HStack {
@@ -220,7 +220,7 @@ struct homePage: View {
                 Spacer()
                 
                 Text(post.numberOfLikes > 0 ? "\(post.numberOfLikes)" : "")
-                thumButton(liked: $liked)
+                thumButton(liked: $liked).foregroundColor(Color("darkBlue"))
                 
                 
                 Spacer()

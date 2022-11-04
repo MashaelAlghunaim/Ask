@@ -96,7 +96,7 @@ let posts: [Post] = [
     
     struct PostActionViews: View {
         @State private var faved = true
-        @State private var liked = false
+        @State private var liked = true
         let post: Post
         var body: some View {
             HStack {
@@ -158,6 +158,7 @@ let posts: [Post] = [
                     Image(systemName: "hand.thumbsup")
                 }else if liked {
                     Image(systemName: "hand.thumbsup.fill")
+                        .foregroundColor(Color("darkBlue"))
                     
                 }
             })

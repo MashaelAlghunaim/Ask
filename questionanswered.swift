@@ -16,10 +16,9 @@ struct questionanswered: View {
             VStack{
                 
 
-                NavigationLink(destination:
-                                userQuestions() ){
-                    Image(systemName: "bell")
-                }
+          
+                    Image(systemName: "bell.fill")
+                
                     .padding(.leading, -155.0)
                     .padding(.top, 50.0)
                     .padding()

@@ -132,7 +132,7 @@ let posts: [Post] = [
             }
         }
     }
-    
+        
     struct heartButton: View{
         @Binding var faved: Bool
         var body: some View{

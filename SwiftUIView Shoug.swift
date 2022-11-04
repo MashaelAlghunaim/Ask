@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUIView_Shoug: View {
 
-
+    
     @State var givenText: String = ""
     @State var sentMessages: String = ""
     @State var showingPopup = false

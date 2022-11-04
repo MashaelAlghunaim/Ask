@@ -15,7 +15,7 @@ struct questionanswered: View {
             
             VStack{
                 
-
+                
           
                     Image(systemName: "bell.fill")
                 

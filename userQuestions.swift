@@ -32,7 +32,7 @@ struct userQuestions: View {
            Post(authorName: "د. محمد", timestampText: "١٤٤٤/١٠/٢٢هـ", text: " ", numberOfLikes: 3, title: "هل الإكثار من شرب الماء له أضرار صحية؟", category: "الصحة العامة")
        ]
     
-    
+        
     @State var searchText = ""
     @State var scrollViewContentSize: CGSize = .zero
     @State private var unansw = false

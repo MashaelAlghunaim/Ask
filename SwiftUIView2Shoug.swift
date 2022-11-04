@@ -47,7 +47,7 @@ var values = [
         text:"الجلدية"
     )
 ]
-
+    
 struct BoxView: View {
 
     let sectionContent: SectionContent

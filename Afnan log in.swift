@@ -12,7 +12,7 @@ struct Afnan_log_in: View {
     @State private var password = "0000"
     @State private var wrongEmail = 0
     @State private var wrongPassword = 0
-    @State private var showingLoginScreen = false
+    @State private var isPresentedFullScreenCover = false
     
     var body: some View {
         NavigationView {
@@ -42,7 +42,7 @@ struct Afnan_log_in: View {
                 NavigationLink(destination: tabView()){
                 
                 Button("تسجيل الدخول ") {
-                    
+                    isPresentedFullScreenCover = true
                 }
                 .foregroundColor(.white)
                 .bold()
@@ -60,7 +60,7 @@ struct Afnan_log_in: View {
                     NavigationLink(destination:
                                     sign_up() ){
                         Button("إنشاء حساب") {
-                            
+                            isPresentedFullScreenCover = false
                         }
                     }
                     Text("ليس لديك حساب؟")
@@ -70,9 +70,12 @@ struct Afnan_log_in: View {
                 NavigationLink(destination:
                                     SwiftUIView() ){
                     Button(" الدخول كزائر") {
-                        
+                        isPresentedFullScreenCover = true
                     }
                 }
+                                    .fullScreenCover(isPresented: $isPresentedFullScreenCover){
+                                        tabView()
+                                    }
             }
         }
             

@@ -61,7 +61,7 @@ struct sign_up: View {
                     .border(.red, width: CGFloat(wrongPassword))
             
             
-                NavigationLink(destination: tabView()){
+                NavigationLink(destination: SwiftUIView()){
                     
              
                 Button("إنشاء حساب  ") {
@@ -99,7 +99,9 @@ struct sign_up: View {
                     }
                 }
             }
-            
+            NavigationLink(destination: EmptyView()){
+                EmptyView()
+            }
         }
     }
     

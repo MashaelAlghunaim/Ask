@@ -15,15 +15,14 @@ struct welcomePage: View {
         ZStack{
             VStack{
             NavigationLink(destination: sign_up() ){
-                Image(systemName: "house.fill")
+                Image(uiImage: UIImage(named: "AppIcon") ?? UIImage())
                     .resizable()
-                    .frame(width: 400,height: 400)
+                    .frame(width: 600,height: 600)
                 
                 
             }
-            .padding()
+//            .padding()
             
-                Text("اسأل سؤالك").font(.title)
             
             
         }

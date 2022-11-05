@@ -47,7 +47,7 @@ struct SplashScreenView: View {
                 if signupscreen{
                    welcomePage()
                 }else{
-                    sign_up()
+                    Afnan_log_in()
                 }
                 
                  

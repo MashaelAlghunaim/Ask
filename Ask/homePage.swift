@@ -105,14 +105,15 @@ struct homePage: View {
                         ZStack{
                             NavigationLink(destination: SwiftUIView2Shoug()){
                                 Image(systemName: "plus")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.white)
+                                    .font(.headline)
+                                    .frame(width: 100, height: 100)
+                                    .frame(width: 150,height: 60)
+                                    .background(Color("mediumBlue"))
+                                    .clipShape(Circle()).frame(width: 200, height: 200).position(x: 50, y: 450)
                             }
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                            .font(.headline)
-                            .frame(width: 100, height: 100)
-                            .frame(width: 150,height: 60)
-                            .background(Color("mediumBlue"))
-                            .clipShape(Circle()).frame(width: 200, height: 200).position(x: 50, y: 450)
+                            
                         }
                         
                     }
@@ -174,6 +175,8 @@ struct homePage: View {
                     
                     Text(post.title)
                         .font(.title3)
+                        .scaledToFit()
+                        .minimumScaleFactor(0.01)
                         .bold()
                         .lineLimit(nil)
                         .padding(.bottom, 5)

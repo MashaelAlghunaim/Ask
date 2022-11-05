@@ -77,43 +77,44 @@ struct SwiftUIView: View {
                             
                             Text("آخر المنشورات")
                             //                            Button("آخر المنشورات"){
-                            
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity, alignment: .trailing).padding()
+                                .frame(width: 300, height: 40)
+                                .frame(width: 350, height: 60)
+                                .background(didTap ? Color("darkBlue") : Color("mediumBlue"))
+                                .mask(RoundedRectangle(cornerRadius: 25, style: .continuous)).frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing)
                         }
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity, alignment: .trailing).padding()
-                        .frame(width: 300, height: 40)
-                        .frame(width: 350, height: 60)
-                        .background(didTap ? Color("darkBlue") : Color("mediumBlue"))
-                        .mask(RoundedRectangle(cornerRadius: 25, style: .continuous)).frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing)
-                    }
-                    NavigationLink(destination: SwiftUIView2Shoug1()){
-                        Text("اسأل سؤالك")
-                        //                            Button("اسأل سؤالك"){
+                        
+                        
+                        NavigationLink(destination: SwiftUIView2Shoug1()){
+                            Text("اسأل سؤالك")
+                            //                            Button("اسأل سؤالك"){
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity, alignment: .trailing).padding()
+                                .frame(width: 300, height: 40)
+                                .frame(width: 350, height: 60)
+                                .background(Color("mediumBlue"))
+                                .mask(RoundedRectangle(cornerRadius: 25, style: .continuous)).frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing)
+                        }
+                        
+                        
+                        
+                        NavigationLink(destination: userQuestions()){
+                            Text("جميع أسئلتي")
+                            //                        Button("جميع أسئلتي"){
+                            //
+                                .fontWeight(.bold)
+                                .frame(maxWidth: .infinity, alignment: .trailing).padding()
+                                .foregroundColor(.white)
+                                .frame(width: 300, height: 40)
+                                .frame(width: 350, height: 60)
+                                .background(Color("mediumBlue"))
+                                .mask(RoundedRectangle(cornerRadius: 25, style: .continuous)).frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing)
+                        }
                         
                     }
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity, alignment: .trailing).padding()
-                    .frame(width: 300, height: 40)
-                    .frame(width: 350, height: 60)
-                    .background(Color("mediumBlue"))
-                    .mask(RoundedRectangle(cornerRadius: 25, style: .continuous)).frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing)
-                    
-                    
-                    NavigationLink(destination: userQuestions()){
-                        Text("جميع أسئلتي")
-                        //                        Button("جميع أسئلتي"){
-                        //
-                    }
-                    .fontWeight(.bold)
-                    .frame(maxWidth: .infinity, alignment: .trailing).padding()
-                    .foregroundColor(.white)
-                    .frame(width: 300, height: 40)
-                    .frame(width: 350, height: 60)
-                    .background(Color("mediumBlue"))
-                    .mask(RoundedRectangle(cornerRadius: 25, style: .continuous)).frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing)
-                    
                 }
                     
                     
@@ -143,7 +144,8 @@ struct SwiftUIView: View {
                 //                        }
                 
                 
-        }.navigationViewStyle(.stack)
+        }//.navigationViewStyle(.stack)
+            .navigationBarBackButtonHidden(true)
         }
         
     }

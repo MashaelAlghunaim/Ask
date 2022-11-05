@@ -61,7 +61,7 @@ struct sign_up: View {
                     .border(.red, width: CGFloat(wrongPassword))
             
             
-                NavigationLink(destination: SwiftUIView()){
+                NavigationLink(destination: tabView()){
                     
              
                 Text("إنشاء حساب  ")
@@ -93,7 +93,7 @@ struct sign_up: View {
                                     Afnan_log_in()){
                         Text("تسجيل الدخول ")
                         Button("") {
-                            isPresentedFullScreenCover = true
+                            //isPresentedFullScreenCover = true
                             // Text("sign in")
                         }
                     }
@@ -102,10 +102,11 @@ struct sign_up: View {
                         
                 } .padding()
                 NavigationLink(destination:
-                                    SwiftUIView() ){
-                    Button(" الدخول كزائر") {
+                                    tabView() ){
+                    
+                    Text(" الدخول كزائر")
                         
-                    }
+                    
                 }
             }
             NavigationLink(destination: EmptyView()){

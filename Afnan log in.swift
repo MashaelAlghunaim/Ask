@@ -60,7 +60,7 @@ struct Afnan_log_in: View {
                     NavigationLink(destination: sign_up() ){
                         Text("إنشاء حساب")
                         Button("") {
-                        isPresentedFullScreenCover = true
+                        //isPresentedFullScreenCover = true
                         
                             //
                         }
@@ -70,10 +70,10 @@ struct Afnan_log_in: View {
                         .padding(2)
                 }
                 NavigationLink(destination:
-                                    SwiftUIView() ){
-                    Button(" الدخول كزائر") {
-                        isPresentedFullScreenCover = true
-                    }
+                                    tabView() ){
+                    Text(" الدخول كزائر") 
+                        //isPresentedFullScreenCover = true
+                    
                 }
                                     .fullScreenCover(isPresented: $isPresentedFullScreenCover){
                                         tabView()

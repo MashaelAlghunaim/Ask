@@ -58,7 +58,7 @@ struct tabView: View {
             profilePage()
                 .tabItem {
                     Label("حسابي", systemImage:"person.circle")
-                        
+                    
                 }.tag(0)
                 .toolbar(.visible, for: .tabBar)
             
@@ -70,7 +70,7 @@ struct tabView: View {
                 .toolbar(.visible, for: .tabBar)
             
                 .toolbarBackground(Color("veryLightGray"),for: .tabBar)
-        
+            
             SwiftUIView()
                 .tabItem {
                     Label("الرئيسية", systemImage: "house.circle")
@@ -79,11 +79,13 @@ struct tabView: View {
             
                 .toolbarBackground(Color("veryLightGray"),for: .tabBar)
         }
-    )}
-    
+        ).navigationBarBackButtonHidden(true)
+        
+    }
+}
 struct tabView_Previews: PreviewProvider {
     static var previews: some View {
         tabView()
     }
 }
-}
+

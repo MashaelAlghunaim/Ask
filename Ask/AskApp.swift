@@ -17,7 +17,7 @@ struct AskApp: App {
                // .environment(\.managedObjectContext, //persistenceController.container.viewContext)
           //  homePage().environment(\.managedObjectContext, persistenceController.container.viewContext)
           //  if {
-           SplashScreenView()
+           tabView()
          //   } else {
                 
           //  }

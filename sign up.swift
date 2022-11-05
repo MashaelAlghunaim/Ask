@@ -17,7 +17,7 @@ struct sign_up: View {
     @State private var showingLoginScreen = false
     @State private var rewritePassword = "12345"
     @State private var isPresentedFullScreenCover = false
-   
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         NavigationView {
@@ -64,9 +64,9 @@ struct sign_up: View {
                 NavigationLink(destination: SwiftUIView()){
                     
              
-                Button("إنشاء حساب  ") {
+                Text("إنشاء حساب  ")
 //                    isPresentedFullScreenCover = true
-                }
+                
                 }
                 .foregroundColor(.white)
                 .frame(width: 300, height: 50)
@@ -79,13 +79,22 @@ struct sign_up: View {
 //                    SwiftUIView()
 //        }
                
-               
+//                NavigationLink(destination: sign_up() ){
+//                    Text("إنشاء حساب")
+//                    Button("") {
+//                    isPresentedFullScreenCover = true
+//
+//                        //
+//                    }
+//                }
        
                 HStack{
                     NavigationLink(destination:
-                                    Afnan_log_in() ){
-                        Button("تسجيل الدخول ") {
-                            
+                                    Afnan_log_in()){
+                        Text("تسجيل الدخول ")
+                        Button("") {
+                            isPresentedFullScreenCover = true
+                            // Text("sign in")
                         }
                     }
                     
@@ -102,7 +111,7 @@ struct sign_up: View {
             NavigationLink(destination: EmptyView()){
                 EmptyView()
             }
-        }
+        }.navigationBarBackButtonHidden(true)
     }
     
 }

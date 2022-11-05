@@ -174,6 +174,8 @@ struct homePage: View {
                     
                     Text(post.title)
                         .font(.title3)
+                        .scaledToFit()
+                        .minimumScaleFactor(0.01)
                         .bold()
                         .lineLimit(nil)
                         .padding(.bottom, 5)

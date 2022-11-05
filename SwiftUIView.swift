@@ -143,7 +143,8 @@ struct SwiftUIView: View {
                 //                        }
                 
                 
-        }.navigationViewStyle(.stack)
+        }//.navigationViewStyle(.stack)
+            .navigationBarBackButtonHidden(true)
         }
         
     }

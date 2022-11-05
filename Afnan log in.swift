@@ -57,10 +57,12 @@ struct Afnan_log_in: View {
                     
                 }.padding([.top, .bottom])
                 HStack {
-                    NavigationLink(destination:
-                                    sign_up() ){
-                        Button("إنشاء حساب") {
-                            isPresentedFullScreenCover = false
+                    NavigationLink(destination: sign_up() ){
+                        Text("إنشاء حساب")
+                        Button("") {
+                        isPresentedFullScreenCover = true
+                        
+                            //
                         }
                     }
                     Text("ليس لديك حساب؟")
@@ -77,7 +79,7 @@ struct Afnan_log_in: View {
                                         tabView()
                                     }
             }
-        }
+        }.navigationBarBackButtonHidden(true)
             
         }
         
